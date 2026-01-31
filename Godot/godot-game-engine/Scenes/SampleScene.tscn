@@ -1,0 +1,97 @@
+[gd_scene load_steps=14 format=3 uid="uid://ba8cjo1lp26mg"]
+
+[ext_resource type="ArrayMesh" uid="uid://dt0sel17tvs63" path="res://Models/OBJ format/block-grass-curve-half.obj" id="1_pc6yr"]
+[ext_resource type="ArrayMesh" uid="uid://bex8lxjj3ovln" path="res://Models/OBJ format/block-grass-corner-overhang.obj" id="2_gkfnr"]
+[ext_resource type="ArrayMesh" uid="uid://dgxndnn7emqmn" path="res://Models/OBJ format/block-grass-hexagon.obj" id="3_3og0a"]
+[ext_resource type="ArrayMesh" uid="uid://bmnhu7xs47o1u" path="res://Models/OBJ format/block-grass-curve.obj" id="4_o4uqv"]
+[ext_resource type="ArrayMesh" uid="uid://con14ff02lh83" path="res://Models/OBJ format/barrel.obj" id="5_aav54"]
+[ext_resource type="ArrayMesh" uid="uid://d18kb1idwti6i" path="res://Models/OBJ format/block-grass-long.obj" id="6_54lly"]
+[ext_resource type="ArrayMesh" uid="uid://d0uht6e8ofqwa" path="res://Models/OBJ format/arrows.obj" id="7_edgy5"]
+[ext_resource type="ArrayMesh" uid="uid://bqymmfli3rq6s" path="res://Models/OBJ format/block-moving-blue.obj" id="8_dv6v0"]
+[ext_resource type="ArrayMesh" uid="uid://dat1t6ct2yky0" path="res://Models/OBJ format/block-snow-large-slope-narrow.obj" id="9_qvplj"]
+[ext_resource type="ArrayMesh" uid="uid://dee6vi4y4cpae" path="res://Models/OBJ format/block-snow-large-tall.obj" id="10_fv8d5"]
+[ext_resource type="ArrayMesh" uid="uid://cyhc7ux2ytvlk" path="res://Models/OBJ format/chest.obj" id="11_ad1bl"]
+[ext_resource type="ArrayMesh" uid="uid://c41wk3kx1ivj7" path="res://Models/OBJ format/coin-gold.obj" id="12_hgxrx"]
+[ext_resource type="ArrayMesh" uid="uid://dq3d21hg5575q" path="res://Models/OBJ format/coin-silver.obj" id="13_gkfnr"]
+
+[node name="Root" type="Node3D"]
+
+[node name="BlockGrassCurveHalf" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_pc6yr")
+
+[node name="BlockGrassCornerOverhang" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("2_gkfnr")
+
+[node name="BlockGrassHexagon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0332654, 0, -1.995306)
+mesh = ExtResource("3_3og0a")
+
+[node name="BlockGrassCurve" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0785522, 0, 0.61544275)
+mesh = ExtResource("4_o4uqv")
+
+[node name="CoinGold" type="MeshInstance3D" parent="BlockGrassCurve"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.011322737, 1.2752004, -0.06319475)
+mesh = ExtResource("12_hgxrx")
+skeleton = NodePath("../..")
+
+[node name="Barrel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.96391, 1.0119753, -2.3345556)
+mesh = ExtResource("5_aav54")
+
+[node name="BlockGrassLong" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.8552829, 0, 2.236827)
+mesh = ExtResource("6_54lly")
+
+[node name="Arrows" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.47790468, 1.0176421, 2.2938056)
+mesh = ExtResource("7_edgy5")
+
+[node name="BlockMovingBlue" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73898983, 2.3841858e-07, 4.416431)
+mesh = ExtResource("8_dv6v0")
+
+[node name="BlockSnowLargeSlopeNarrow" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7662027, 0, 6.8132653)
+mesh = ExtResource("9_qvplj")
+
+[node name="BlockSnowLargeTall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0763125, 0, 4.5637903)
+mesh = ExtResource("10_fv8d5")
+
+[node name="Chest" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.7695668, 2.0078008, 4.6545916)
+mesh = ExtResource("11_ad1bl")
+
+[node name="CoinSilver2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.7698207, 1.4204655, 4.5029893)
+mesh = ExtResource("13_gkfnr")
+
+[node name="CoinSilver" type="MeshInstance3D" parent="CoinSilver2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+mesh = ExtResource("13_gkfnr")
+skeleton = NodePath("../..")
+
+[node name="CoinSilver3" type="MeshInstance3D" parent="CoinSilver2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+mesh = ExtResource("13_gkfnr")
+skeleton = NodePath("../..")
+
+[node name="CoinSilver5" type="MeshInstance3D" parent="CoinSilver2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = ExtResource("13_gkfnr")
+skeleton = NodePath("../..")
+
+[node name="CoinSilver4" type="MeshInstance3D" parent="CoinSilver2/CoinSilver5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+mesh = ExtResource("13_gkfnr")
+skeleton = NodePath("../../..")
+
+[node name="CoinSilver6" type="MeshInstance3D" parent="CoinSilver2/CoinSilver5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+mesh = ExtResource("13_gkfnr")
+skeleton = NodePath("../../..")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.57364786, 0, -0.81910205, 0, 1, 0, 0.81910205, 0, -0.57364786, -3.2088718, 1.7443029, -3.1750863)
