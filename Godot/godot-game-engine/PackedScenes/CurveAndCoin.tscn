@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://yro5lbkly22w"]
+
+[ext_resource type="ArrayMesh" uid="uid://bmnhu7xs47o1u" path="res://Models/OBJ format/block-grass-curve.obj" id="1_1agwo"]
+[ext_resource type="ArrayMesh" uid="uid://c41wk3kx1ivj7" path="res://Models/OBJ format/coin-gold.obj" id="2_qqcmx"]
+
+[node name="CurveAndCoin" type="Node3D"]
+
+[node name="BlockGrassCurve" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_1agwo")
+
+[node name="CoinGold" type="MeshInstance3D" parent="BlockGrassCurve"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.011322737, 1.2752004, -0.06319475)
+mesh = ExtResource("2_qqcmx")
+skeleton = NodePath("../..")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ba8cjo1lp26mg"]
+[gd_scene load_steps=15 format=3 uid="uid://ba8cjo1lp26mg"]
 
 [ext_resource type="ArrayMesh" uid="uid://dt0sel17tvs63" path="res://Models/OBJ format/block-grass-curve-half.obj" id="1_pc6yr"]
 [ext_resource type="ArrayMesh" uid="uid://bex8lxjj3ovln" path="res://Models/OBJ format/block-grass-corner-overhang.obj" id="2_gkfnr"]
@@ -13,6 +13,7 @@
 [ext_resource type="ArrayMesh" uid="uid://cyhc7ux2ytvlk" path="res://Models/OBJ format/chest.obj" id="11_ad1bl"]
 [ext_resource type="ArrayMesh" uid="uid://c41wk3kx1ivj7" path="res://Models/OBJ format/coin-gold.obj" id="12_hgxrx"]
 [ext_resource type="ArrayMesh" uid="uid://dq3d21hg5575q" path="res://Models/OBJ format/coin-silver.obj" id="13_gkfnr"]
+[ext_resource type="PackedScene" uid="uid://yro5lbkly22w" path="res://PackedScenes/CurveAndCoin.tscn" id="14_3og0a"]
 
 [node name="Root" type="Node3D"]
 
@@ -95,3 +96,6 @@ skeleton = NodePath("../../..")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-0.57364786, 0, -0.81910205, 0, 1, 0, 0.81910205, 0, -0.57364786, -3.2088718, 1.7443029, -3.1750863)
+
+[node name="CurveAndCoin" parent="." instance=ExtResource("14_3og0a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
