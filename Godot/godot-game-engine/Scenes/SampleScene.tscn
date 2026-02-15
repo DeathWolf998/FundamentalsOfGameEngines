@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ba8cjo1lp26mg"]
+[gd_scene format=3 uid="uid://ba8cjo1lp26mg"]
 
 [ext_resource type="ArrayMesh" uid="uid://dt0sel17tvs63" path="res://Models/OBJ format/block-grass-curve-half.obj" id="1_pc6yr"]
 [ext_resource type="ArrayMesh" uid="uid://bex8lxjj3ovln" path="res://Models/OBJ format/block-grass-corner-overhang.obj" id="2_gkfnr"]
@@ -14,88 +14,101 @@
 [ext_resource type="ArrayMesh" uid="uid://c41wk3kx1ivj7" path="res://Models/OBJ format/coin-gold.obj" id="12_hgxrx"]
 [ext_resource type="ArrayMesh" uid="uid://dq3d21hg5575q" path="res://Models/OBJ format/coin-silver.obj" id="13_gkfnr"]
 [ext_resource type="PackedScene" uid="uid://yro5lbkly22w" path="res://PackedScenes/CurveAndCoin.tscn" id="14_3og0a"]
+[ext_resource type="PackedScene" uid="uid://dhuyd2rknnfaw" path="res://Models/FBX format/character-oozi.fbx" id="15_aav54"]
+[ext_resource type="PackedScene" uid="uid://dshc0n7dsa3es" path="res://Models/FBX format/character-oopi.fbx" id="16_54lly"]
+[ext_resource type="Script" uid="uid://cr1gb2w0l3xxj" path="res://Script/Caller.gd" id="16_edgy5"]
+[ext_resource type="Script" uid="uid://db5yg5c6pojhs" path="res://Script/Recevier.gd" id="18_dv6v0"]
 
-[node name="Root" type="Node3D"]
+[node name="Root" type="Node3D" unique_id=2134808882]
 
-[node name="BlockGrassCurveHalf" type="MeshInstance3D" parent="."]
+[node name="BlockGrassCurveHalf" type="MeshInstance3D" parent="." unique_id=648500119]
 mesh = ExtResource("1_pc6yr")
 
-[node name="BlockGrassCornerOverhang" type="MeshInstance3D" parent="."]
+[node name="BlockGrassCornerOverhang" type="MeshInstance3D" parent="." unique_id=209469890]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
 mesh = ExtResource("2_gkfnr")
 
-[node name="BlockGrassHexagon" type="MeshInstance3D" parent="."]
+[node name="BlockGrassHexagon" type="MeshInstance3D" parent="." unique_id=2030696789]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0332654, 0, -1.995306)
 mesh = ExtResource("3_3og0a")
 
-[node name="BlockGrassCurve" type="MeshInstance3D" parent="."]
+[node name="BlockGrassCurve" type="MeshInstance3D" parent="." unique_id=246579695]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0785522, 0, 0.61544275)
 mesh = ExtResource("4_o4uqv")
 
-[node name="CoinGold" type="MeshInstance3D" parent="BlockGrassCurve"]
+[node name="CoinGold" type="MeshInstance3D" parent="BlockGrassCurve" unique_id=1122913370]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.011322737, 1.2752004, -0.06319475)
 mesh = ExtResource("12_hgxrx")
 skeleton = NodePath("../..")
 
-[node name="Barrel" type="MeshInstance3D" parent="."]
+[node name="Barrel" type="MeshInstance3D" parent="." unique_id=204961419]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.96391, 1.0119753, -2.3345556)
 mesh = ExtResource("5_aav54")
 
-[node name="BlockGrassLong" type="MeshInstance3D" parent="."]
+[node name="BlockGrassLong" type="MeshInstance3D" parent="." unique_id=1289624994]
 transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.8552829, 0, 2.236827)
 mesh = ExtResource("6_54lly")
 
-[node name="Arrows" type="MeshInstance3D" parent="."]
+[node name="Arrows" type="MeshInstance3D" parent="." unique_id=508894812]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.47790468, 1.0176421, 2.2938056)
 mesh = ExtResource("7_edgy5")
 
-[node name="BlockMovingBlue" type="MeshInstance3D" parent="."]
+[node name="BlockMovingBlue" type="MeshInstance3D" parent="." unique_id=1870797624]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73898983, 2.3841858e-07, 4.416431)
 mesh = ExtResource("8_dv6v0")
 
-[node name="BlockSnowLargeSlopeNarrow" type="MeshInstance3D" parent="."]
+[node name="BlockSnowLargeSlopeNarrow" type="MeshInstance3D" parent="." unique_id=1477134059]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7662027, 0, 6.8132653)
 mesh = ExtResource("9_qvplj")
 
-[node name="BlockSnowLargeTall" type="MeshInstance3D" parent="."]
+[node name="BlockSnowLargeTall" type="MeshInstance3D" parent="." unique_id=384562287]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0763125, 0, 4.5637903)
 mesh = ExtResource("10_fv8d5")
 
-[node name="Chest" type="MeshInstance3D" parent="."]
+[node name="Chest" type="MeshInstance3D" parent="." unique_id=1424614629]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.7695668, 2.0078008, 4.6545916)
 mesh = ExtResource("11_ad1bl")
 
-[node name="CoinSilver2" type="MeshInstance3D" parent="."]
+[node name="CoinSilver2" type="MeshInstance3D" parent="." unique_id=1695807751]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.7698207, 1.4204655, 4.5029893)
 mesh = ExtResource("13_gkfnr")
 
-[node name="CoinSilver" type="MeshInstance3D" parent="CoinSilver2"]
+[node name="CoinSilver" type="MeshInstance3D" parent="CoinSilver2" unique_id=1592813072]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
 mesh = ExtResource("13_gkfnr")
 skeleton = NodePath("../..")
 
-[node name="CoinSilver3" type="MeshInstance3D" parent="CoinSilver2"]
+[node name="CoinSilver3" type="MeshInstance3D" parent="CoinSilver2" unique_id=629871562]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
 mesh = ExtResource("13_gkfnr")
 skeleton = NodePath("../..")
 
-[node name="CoinSilver5" type="MeshInstance3D" parent="CoinSilver2"]
+[node name="CoinSilver5" type="MeshInstance3D" parent="CoinSilver2" unique_id=1891356048]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = ExtResource("13_gkfnr")
 skeleton = NodePath("../..")
 
-[node name="CoinSilver4" type="MeshInstance3D" parent="CoinSilver2/CoinSilver5"]
+[node name="CoinSilver4" type="MeshInstance3D" parent="CoinSilver2/CoinSilver5" unique_id=857697290]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
 mesh = ExtResource("13_gkfnr")
 skeleton = NodePath("../../..")
 
-[node name="CoinSilver6" type="MeshInstance3D" parent="CoinSilver2/CoinSilver5"]
+[node name="CoinSilver6" type="MeshInstance3D" parent="CoinSilver2/CoinSilver5" unique_id=454070072]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
 mesh = ExtResource("13_gkfnr")
 skeleton = NodePath("../../..")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1405049438]
 transform = Transform3D(-0.57364786, 0, -0.81910205, 0, 1, 0, 0.81910205, 0, -0.57364786, -3.2088718, 1.7443029, -3.1750863)
 
-[node name="CurveAndCoin" parent="." instance=ExtResource("14_3og0a")]
+[node name="CurveAndCoin" parent="." unique_id=311679196 instance=ExtResource("14_3og0a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="Caller" parent="." unique_id=2020491270 node_paths=PackedStringArray("recevier") instance=ExtResource("15_aav54")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2374303, 0, 5.1099033)
+script = ExtResource("16_edgy5")
+recevier = NodePath("../Receiver")
+
+[node name="Receiver" parent="." unique_id=823729654 instance=ExtResource("16_54lly")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.24943, 0, 6.157123)
+script = ExtResource("18_dv6v0")
