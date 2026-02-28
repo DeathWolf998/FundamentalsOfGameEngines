@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c86v382ew6h2j"]
+
+[ext_resource type="PackedScene" uid="uid://cl865ncdhwnn6" path="res://Models/FBX format/coin-gold.fbx" id="1_0dwi5"]
+[ext_resource type="Script" uid="uid://b8qpcn2i8vnsj" path="res://Scripts/Coin.gd" id="2_47jkr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7d72o"]
+
+[node name="Coin" type="Node3D" unique_id=629424286]
+
+[node name="coin-gold" parent="." unique_id=1021524099 instance=ExtResource("1_0dwi5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023408055, 0, 0.034540653)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=780874966]
+collision_mask = 2
+script = ExtResource("2_47jkr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=723657980]
+shape = SubResource("BoxShape3D_7d72o")
