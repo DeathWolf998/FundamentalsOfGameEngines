@@ -1,5 +1,6 @@
 ﻿using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using static UnityEngine.UI.Image;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
 namespace AOTADev
@@ -113,6 +114,13 @@ Vector3 vH = Horizontal(_rb.linearVelocity);
             float maxBraking = Mathf.Min(brakingFactor, vH.magnitude / dt);
             return -maxBraking * vH.normalized;
         }
+
+        void OnAttack()
+        {
+            Debug.Log("Attack!!");
+        }
+
+
         private static Vector3 Horizontal(Vector3 v) => Vector3.ProjectOnPlane(v,
         Vector3.up);
         private bool IsGrounded()
