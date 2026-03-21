@@ -9,10 +9,9 @@
 [ext_resource type="ArrayMesh" uid="uid://bqymmfli3rq6s" path="res://Models/OBJ format/block-moving-blue.obj" id="8_dv6v0"]
 [ext_resource type="ArrayMesh" uid="uid://dat1t6ct2yky0" path="res://Models/OBJ format/block-snow-large-slope-narrow.obj" id="9_qvplj"]
 [ext_resource type="ArrayMesh" uid="uid://dee6vi4y4cpae" path="res://Models/OBJ format/block-snow-large-tall.obj" id="10_fv8d5"]
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Imports/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="11_31nmp"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="11_31nmp"]
 [ext_resource type="ArrayMesh" uid="uid://cyhc7ux2ytvlk" path="res://Models/OBJ format/chest.obj" id="11_ad1bl"]
 [ext_resource type="PackedScene" uid="uid://c86v382ew6h2j" path="res://PackedScenes/Coin.tscn" id="11_gkfnr"]
-[ext_resource type="Script" uid="uid://2naxaar74p0l" path="res://Imports/brackeys-proto-controller-main/proto_controller/proto_controller.gd" id="12_pc6yr"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_pc6yr"]
 
@@ -78,7 +77,6 @@ transform = Transform3D(0.045988634, 0, 0, 0, 1.0000004, 0, 0, 0, 0.028895723, 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3517017, 0, -0.53279924)
 disable_mode = 2
 collision_layer = 2
-script = ExtResource("12_pc6yr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1571330860]
 shape = SubResource("CapsuleShape3D_pc6yr")
